@@ -211,6 +211,8 @@ Nav
   top:0;
   left: 0;
   width: 100%;
+  z-index: 99;
+  transition: all 0.8s linear;
 }
 .nav-center{
   width: 85vw;
@@ -266,6 +268,7 @@ Hero
 
 .hero{
   min-height: 100vh;
+  margin-top: 3rem;
 }
 .hero-center{
   display: flex;
