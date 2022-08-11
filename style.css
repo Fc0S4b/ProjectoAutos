@@ -430,14 +430,13 @@ Hero
 
   /* 
 -_-_-_-_-_-_-_-_-
-Services
+featured
 -_-_-_-_-_-_-_-_-
 */
 
-.section-services{
+.section-featured{
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   gap: 10px;
 }
 
@@ -446,6 +445,14 @@ Services
   border-radius:1rem;
   overflow: hidden;
   position: relative;
+  
+}
+.card h3{
+  font-size: 1.3rem;
+  margin: 20px;
+}
+.card h4{
+ margin: 20px;
 }
 
 .card-btn{
@@ -469,7 +476,7 @@ Services
 }
 
 @media screen and ( max-width: 900px){
-  .section-services{
+  .section-featured{
     flex-wrap:wrap;
   }
   .card{
@@ -485,4 +492,43 @@ Services
   .card h4{
     font-size: 0.8rem;
   }
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.service{
+  text-align: center;
+  /* margin: 2px 20px; */
+  background: var(--primary-200);
+  border-radius: 50%;
+  width:180px;
+  height: 180px;
+  display: grid;
+  place-content: center;
+  border: 10px solid hsl(246,100%, 93%);
+}
+.service:hover{
+  border: 10px solid var(--primary-200);
+  background: hsl(246,100%, 93%);
+}
+
+.service h3{
+  font-size: 1rem;
+  margin: 5px;
+  color: var(--grey-800);
+  
+}
+.service i {
+  font-size: 2rem;
+  color: var(--grey-700);
+  cursor: pointer;
+}
+.service i:hover{
+  color: var(--grey-800);
+  
 }
