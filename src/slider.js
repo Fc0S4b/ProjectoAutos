@@ -21,26 +21,26 @@ btns.forEach((btn, i) => {
   });
 });
 
-const repeat = function(){
+const repeat = function () {
   let active = document.getElementsByClassName('active');
   let i = 1;
-  const repeater = () =>{
-    setTimeout(function(){
-      [...active].forEach((activeSlide)=>{
-        activeSlide.classList.remove('active')
-      })
-      slides[i].classList.add('active')
+  const repeater = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active');
+      });
+      slides[i].classList.add('active');
       btns[i].classList.add('active');
       i++;
-      if(slides.length == i){
-        i =0;
+      if (slides.length == i) {
+        i = 0;
       }
-      if(i >= slides.length){
+      if (i >= slides.length) {
         return;
       }
-      repeater()
-    }, 3000)
-  }
+      repeater();
+    }, 4000);
+  };
   repeater();
-}
+};
 repeat();
